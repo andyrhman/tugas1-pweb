@@ -51,6 +51,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <!-- from cdn -->
     <script src="https://unpkg.com/@material-tailwind/html@latest/scripts/ripple.js"></script>
+    <link rel="icon" type="image/x-icon" href="public/favicon.ico">
     <title>Registrasi Mahasiswa</title>
 </head>
 

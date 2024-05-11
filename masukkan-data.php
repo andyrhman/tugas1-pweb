@@ -1,3 +1,10 @@
+<!-- 
+    Dibuat oleh:
+    NAMA: ANDY RAHMAN RAMADHAN
+    NIM: 220401070404
+    KELAS: IT403
+-->
+
 <?php
 
 include_once "classes/Mahasiswa.php";
@@ -10,7 +17,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
     <meta charset="UTF-8" />

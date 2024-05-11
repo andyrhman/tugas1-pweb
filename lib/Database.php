@@ -1,3 +1,10 @@
+<!-- 
+    Dibuat oleh:
+    NAMA: ANDY RAHMAN RAMADHAN
+    NIM: 220401070404
+    KELAS: IT403
+-->
+
 <?php
 include_once "config/config.php";
 
@@ -33,9 +40,18 @@ class Database
     // Masukkan data
     public function masukkan($query)
     {
-        $result = mysqli_query($this->link, $query) or die($this->link->error . __LINE__);
-        if ($result) {
-            return $result;
+        $hasil = mysqli_query($this->link, $query) or die($this->link->error . __LINE__);
+        if ($hasil) {
+            return $hasil;
+        } else {
+            return false;
+        }
+    }
+    public function pilih($query)
+    {
+        $hasil = mysqli_query($this->link, $query) or die($this->link->error . __LINE__);
+        if (mysqli_num_rows($hasil) > 0) {
+            return $hasil;
         } else {
             return false;
         }
